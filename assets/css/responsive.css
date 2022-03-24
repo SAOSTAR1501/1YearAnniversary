@@ -1,0 +1,61 @@
+/* PC */
+@media (min-width: 1024px) {
+    .footer__love {
+        max-width: 960px;
+    }
+}
+
+/* Tablet & Mobile */
+@media (max-width: 1023px) {
+    .footer__love {
+        max-width: 720px;
+    }
+}
+
+/* Tablet */
+@media (max-width: 1023px) and (min-width: 740px) {
+    .stars, .star-img {
+        height: 160px;
+        width: 160px;
+    }
+
+    .star-around {
+        height: 65%;
+        width: 100%;
+        margin-top: -70px;
+    }
+
+    .heart {
+        top: -160px;
+    }
+}
+
+
+/* Mobile */
+@media (max-width: 739px) {
+    .stars, .star-img {
+        height: 90px;
+        width: 90px;
+    }
+
+    .heart {
+        height: 30px;
+        width: 30px;
+    }
+
+    .heart:before {
+        width: 30px;
+        height: 30px;
+        top: -16px;
+    }
+
+    .heart:after {
+        width: 30px;
+        height: 30px;
+        left: 16px;
+    }
+
+    .footer__love {
+        max-width: calc(100% - 36px);
+    }
+}

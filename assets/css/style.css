@@ -1,0 +1,152 @@
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+
+.heading__love {
+    justify-content: center;
+    display: flex;
+
+}
+
+.heading__love-1year {
+    padding-top: 40px;
+    font-size: 50px;
+    background-color: transparent;
+    color: #ffcccc;
+    font-weight: 700;
+}
+
+.heading__love-1year-speech {
+    display: flex;
+    justify-content: center;
+    padding-top: 12px;
+    font-size: 25px;
+    background-color: transparent;
+    color: #ffcccc;
+}
+
+.star-around {
+    margin: auto;
+    width: 1200px;
+    max-width: 100%;
+    height: 50%;
+    margin-top: 8px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.stars,
+.star-img {
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    animation-iteration-count: infinite;
+  }
+
+
+
+  .star-1 {
+    animation-name: twinkle-1;
+    animation-duration: 1s;
+    left: 0;
+  }
+
+  .heart {
+    position: absolute;
+    margin: auto;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #f02f4f;
+    height: 50px;
+    width: 50px;
+    transform: rotate(-45deg);
+    animation-name: beat;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+
+  }
+  .heart:after {
+    background-color: #f02f4f;
+    content: "";
+    border-radius: 50%;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    top: 0px;
+    left: 25px;
+  }
+  .heart:before {
+    background-color: #f02f4f;
+    content: "";
+    border-radius: 50%;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    top: -25px;
+    left: 0px;
+  }
+
+  .star-2 {
+    animation-name: twinkle-2;
+    animation-duration: 1s;
+  }
+
+.footer__love {
+    margin: auto;
+    background-color: transparent;
+    text-align: center;
+}
+
+.footer__love-speech {
+    font-size: 16px;
+    color: #000099;
+
+}
+
+.footer__since {
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(148, 37, 37);
+    font-weight: 500;
+}
+
+
+  @keyframes twinkle-1 {
+    40% {
+      transform: scale(0.5);
+      opacity: 0.5;
+    }
+  }
+
+  @keyframes twinkle-2 {
+    40% {
+      transform: scale(0.5);
+      opacity: 0.5;
+    }
+  }
+
+  @keyframes beat {
+    0% {
+    transform: scale(1) rotate(-45deg);
+    }
+    50% {
+    transform: scale(0.6) rotate(-45deg);
+    }
+}
+
+  #back {
+    position: fixed;
+    padding: 0;
+    margin: 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(black, #000099, #66c2ff, #ffcccc, #ffeee6);
+  }
